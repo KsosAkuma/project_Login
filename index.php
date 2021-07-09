@@ -11,15 +11,7 @@ error_reporting(E_ALL);
     </form>
 </div>
 <?php
-//création du json avec "hashage" du MDP
-$users = [
-    ['email' => "test@mail.com", 'password' => password_hash("0000", PASSWORD_DEFAULT)],
-    ['email' => "test2@mail.com", 'password' => password_hash("1111", PASSWORD_DEFAULT)],
-    ['email' => "test3@mail.com", 'password' => password_hash("2222", PASSWORD_DEFAULT)],
 
-];
-$json = json_encode($users);
-file_put_contents('./user.json', $json);
 // on récupère la valeur du paramètre page dans l'url
 if (!empty($_GET['status'])) {
     $status = $_GET['status'];
