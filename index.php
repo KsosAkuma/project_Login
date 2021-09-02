@@ -3,8 +3,8 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 ?>
 
-<div class="container" style="display:flex; justify-content:center;">
-    <form action="connected.php" method="post" style="display: flex; flex-direction:column; align-items:center; gap:1rem;">
+<div class="container">
+    <form action="connected.php" method="post">
         <input type="email" name="email" placeholder="Entrez votre mail" required>
         <input type="password_hash" name="password" placeholder="Entrez votre mot de passe" required>
         <input type="submit" name="submit" value="Sauvegarder">
